@@ -47,10 +47,12 @@ typedef struct cat_s
 
 extern cat_t cat;
 
-int exe(char *, my_stack_t **, unsigned int ,FILE *);
-void free_stack_or_queue(my_stack_t *);
-void _push_node(my_stack_t **, unsigned int);
-void _pall_stack(my_stack_t **, unsigned int);
+int exe(char *content_in_f, my_stack_t **stack, unsigned int count,
+FILE *file_is_r);
+void free_stack_or_queue(my_stack_t *h);
+void _push_node(my_stack_t **h, unsigned int count);
+void _pall_stack(my_stack_t **head, unsigned int count);
+
 
 
 #endif
