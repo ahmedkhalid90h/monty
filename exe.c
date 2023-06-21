@@ -12,7 +12,7 @@ int exe(char *content_in_f, my_stack_t **stack, unsigned int count,
 FILE *file_is_r)
 {
 	instruction_t op_linked_List[] = {
-				{"pall", s_pall},
+				{"pall", _pall_stack},
 				{"push", _push_node},
 				{"pint", s_pint},
 				{"pop", s_pop},
