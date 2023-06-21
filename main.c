@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 		content_in_f = NULL;
 		r_line_ = getline(&content_in_f, &size, file_is_r);
 
-		bus.content = content_in_f;
+		cat.content = content_in_f;
 		coun++;
 		if (r_line_ > 0)
 		{
