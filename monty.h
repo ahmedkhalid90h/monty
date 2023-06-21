@@ -1,15 +1,13 @@
-#ifndef _MONTY_H_
-#define _MONTY_H_
+#ifndef MONTY
+#define MONTY
 
-#define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <sys/stat.h>
 #include <sys/types.h>
+#include <sys/stat.h>
 #include <fcntl.h>
 #include <ctype.h>
-#include <string.h>
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -39,7 +37,7 @@ typedef struct stack_s
  * Description: doubly linked list node structure
  * for stack, queues, LIFO, FIFO Holberton project
  */
-typedef struct glob
+typedef struct globals
 {
 	int lifo;
 	unsigned int cont;
@@ -47,7 +45,7 @@ typedef struct glob
 	stack_t *head;
 	FILE *fd;
 	char *buffer;
-} global_m;
+} global_t;
 
 /**
  * struct instruction_s - opcode and its function
@@ -63,11 +61,7 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-extern global_m ah_sa;
-
-/* Other code and declarations */
-
-int is_integer(char *str);
+extern global_t vglo;
 
 /* opcode_instructuions*/
 void _push(stack_t **stack, unsigned int line_number);
