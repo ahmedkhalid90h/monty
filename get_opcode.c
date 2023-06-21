@@ -1,11 +1,5 @@
 #include "monty.h"
 
-
-
-
-
-#include "monty.h"
-
 /**
  * get_opcodes - selects the correct opcode to perform
  *
@@ -44,17 +38,4 @@ void free_vglo(void)
         free_dlistint(ah_sa.head);
     if (ah_sa.buffer)
         free(ah_sa.buffer);
-}
-
-
-void free_dlistint(stack_t *head)
-{
-    stack_t *temp;
-
-    while (head)
-    {
-        temp = head;
-        head = head->next;
-        free(temp);
-    }
 }
