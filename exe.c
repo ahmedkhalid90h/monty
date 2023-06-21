@@ -14,6 +14,11 @@ FILE *file_is_r)
 	instruction_t op_linked_List[] = {
 				{"pall", _pall_stack},
 				{"push", _push_node},
+				{"pint", s_pint},
+				{"pop", s_pop},
+				{"swap", s_swap},
+				{"add", s_add},
+				{"nop", s_nop},
 				{NULL, NULL}
 				};
 	unsigned int i = 0;
