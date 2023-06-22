@@ -44,10 +44,10 @@ void _push_node(my_stack_t **h, unsigned int count)
 	n = atoi(cat.arg);
 	if (cat.lifi == 0)
     {
-		add_node(h, n);
+		add_node_in_stack(h, n);
     }
 	else
     {
-		add_queue(h, n);
+		add_in_queue(h, n);
     }
 }

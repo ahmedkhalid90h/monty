@@ -52,6 +52,9 @@ FILE *file_is_r);
 void free_stack_or_queue(my_stack_t *h);
 void _push_node(my_stack_t **h, unsigned int count);
 void _pall_stack(my_stack_t **head, unsigned int count);
+void add_node_in_stack(my_stack_t **h, int n_v);
+void add_in_queue(my_stack_t **head, int n);
+
 
 
 
