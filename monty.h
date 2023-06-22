@@ -1,19 +1,19 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <stdio.h> /* File, fopen, getline, fclose, stderr */
-#include <stdlib.h> /* EXIT_SUCCESS, EXIT_FAILURE, free */
+#include <stdio.h> /* File, fopen, getline, fclose, stderr and  */
+#include <stdlib.h> /* EXIT_SUCCESS, EXIT_FAILURE, free and */
 
-#include <string.h> /* strtok, strcmp */
+#include <string.h> /* strtok, strcmp and */
 
 /**
- * struct stack_s - doubly linked list representation of a stack (or queue)
- * @n: integer
- * @prev: points to the previous element of the stack (or queue)
- * @next: points to the next element of the stack (or queue)
+ * struct stack_s - doubly linked list representation of a stack (or queue) struct
+ * @n: integer struct
+ * @prev: points to the previous element of the stack (or queue) struct
+ * @next: points to the next element of the stack (or queue) struct
  *
  * Description: doubly linked list node structure
- * for stack, queues, LIFO, FIFO
+ * for stack, queues, LIFO, FIFO struct
  */
 typedef struct stack_s
 {
@@ -23,12 +23,12 @@ typedef struct stack_s
 } my_stack_t;
 
 /**
- * struct instruction_s - opcode and its function
- * @opcode: the opcode
- * @f: function to handle the opcode
+ * struct instruction_s - opcode and its function struct
+ * @opcode: the opcode struct
+ * @f: function to handle the opcode struct
  *
  * Description: opcode and its function
- * for stack, queues, LIFO, FIFO
+ * for stack, queues, LIFO, FIFO struct
  */
 typedef struct instruction_s
 {

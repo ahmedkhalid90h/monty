@@ -22,8 +22,8 @@ void add_in_queue(my_stack_t **h, int n)
 
 	if (aux_in)
 	{
-		for (; aux_in->next != NULL; aux_in = aux_in->next)
-        ;
+		for ( ; aux_in->next != NULL; aux_in = aux_in->next)
+		;
 	}
 	if (!aux_in)
 	{
