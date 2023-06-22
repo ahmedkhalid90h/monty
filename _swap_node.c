@@ -29,3 +29,14 @@ void _swap_node(my_stack_t **he, unsigned int count)
 	h->n = h->next->n;
 	h->next->n = aux_i;
 }
+/**
+  *s_nop- nothing to do
+  *@h: stack head or queue head
+  *@coun: line_number of the file
+  *Return: no return
+ */
+void _nop_node(my_stack_t **h, unsigned int coun)
+{
+	(void) coun;
+	(void) h;
+}

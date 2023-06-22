@@ -58,6 +58,7 @@ void _pint_node(my_stack_t **head, unsigned int counter);
 void _pop_node(my_stack_t **head, unsigned int counter);
 void _swap_node(my_stack_t **head, unsigned int counter);
 void _add_node(my_stack_t **head, unsigned int counter);
+void _nop_node(my_stack_t **head, unsigned int counter);
 
 
 #endif
