@@ -29,7 +29,7 @@ void _push_node(my_stack_t **h, unsigned int count)
 			fprintf(stderr, "L%d: usage: push integer\n", count);
 			fclose(cat.file);
 			free(cat.content);
-			free_stack(*h);
+			free_stack_or_queue(*h);
 			exit(EXIT_FAILURE);
 		}
 	}
@@ -38,7 +38,7 @@ void _push_node(my_stack_t **h, unsigned int count)
 		fprintf(stderr, "L%d: usage: push integer\n", count);
 		fclose(cat.file);
 		free(cat.content);
-		free_stack(*h);
+		free_stack_or_queue(*h);
 		exit(EXIT_FAILURE);
 	}
 	n = atoi(cat.arg);

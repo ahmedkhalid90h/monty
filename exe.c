@@ -21,7 +21,9 @@ FILE *file_is_r)
 
 	op_cmp = strtok(content_in_f, " \n\t");
 	if (op_cmp && op_cmp[0] == '#')
-		return (0);
+		{
+            return (0);
+        }
 
 	cat.arg = strtok(NULL, " \n\t");
 	while (op_linked_List[i].opcode && op_cmp)
@@ -37,7 +39,7 @@ FILE *file_is_r)
 		fprintf(stderr, "L%d: unknown instruction %s\n", count, op_cmp);
 		fclose(file_is_r);
 		free(content_in_f);
-		free_stack(*stack);
+		free_stack_or_queue(*stack);
 		exit(EXIT_FAILURE);
 	}
 	return (1);

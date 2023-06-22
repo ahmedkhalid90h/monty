@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 		coun++;
 		if (r_line_ > 0)
 		{
-			execute(content_in_f, &stack, coun, file_is_r);
+			exe(content_in_f, &stack, coun, file_is_r);
 		}
 		free(content_in_f);
 	}
