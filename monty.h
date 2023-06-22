@@ -54,7 +54,8 @@ void _push_node(my_stack_t **h, unsigned int count);
 void _pall_stack(my_stack_t **head, unsigned int count);
 void add_node_in_stack(my_stack_t **h, int n_v);
 void add_in_queue(my_stack_t **head, int n);
-
+void _pint_node(my_stack_t **head, unsigned int counter);
+void _pop_node(my_stack_t **head, unsigned int counter);
 
 
 
