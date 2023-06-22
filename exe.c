@@ -16,6 +16,8 @@ FILE *file_is_r)
 				{"push", _push_node},
 				{"pint", _pint_node},
 				{"pop", _pop_node},
+				{"swap", _swap_node},
+				{"add", _add_node},
 				{NULL, NULL}
 				};
 	unsigned int i = 0;

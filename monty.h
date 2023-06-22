@@ -7,7 +7,8 @@
 #include <string.h> /* strtok, strcmp and */
 
 /**
- * struct stack_s - doubly linked list representation of a stack (or queue) struct
+ * struct stack_s - doubly linked list representation of a stack (or queue)
+ * struct for stack, queues, LIFO, FIFO
  * @n: integer struct
  * @prev: points to the previous element of the stack (or queue) struct
  * @next: points to the next element of the stack (or queue) struct
@@ -55,7 +56,8 @@ void add_node_in_stack(my_stack_t **h, int n_v);
 void add_in_queue(my_stack_t **head, int n);
 void _pint_node(my_stack_t **head, unsigned int counter);
 void _pop_node(my_stack_t **head, unsigned int counter);
-
+void _swap_node(my_stack_t **head, unsigned int counter);
+void _add_node(my_stack_t **head, unsigned int counter);
 
 
 #endif
