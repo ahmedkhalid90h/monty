@@ -14,11 +14,11 @@ void _pall_stack(my_stack_t **head, unsigned int count)
 	h = *head;
 
 	if (!h)
-    {
-		return;
-    }
-    for ( ; h != NULL; h = h->next)
 	{
-        printf("%d\n", h->n);
+		return;
+	}
+	for ( ; h != NULL; h = h->next)
+	{
+		printf("%d\n", h->n);
 	}
 }

@@ -14,7 +14,7 @@ FILE *file_is_r)
 	instruction_t op_linked_List[] = {
 				{"pall", _pall_stack},
 				{"push", _push_node},
-                {"pint", _pint_node},
+				{"pint", _pint_node},
 				{"pop", _pop_node},
 				{NULL, NULL}
 				};
@@ -23,9 +23,7 @@ FILE *file_is_r)
 
 	op_cmp = strtok(content_in_f, " \n\t");
 	if (op_cmp && op_cmp[0] == '#')
-		{
-            return (0);
-        }
+        return (0);
 
 	cat.arg = strtok(NULL, " \n\t");
 	while (op_linked_List[i].opcode && op_cmp)

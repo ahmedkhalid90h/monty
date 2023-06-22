@@ -44,7 +44,6 @@ typedef struct cat_s
 	char *content;
 	int lifi;
 }  cat_t;
-
 extern cat_t cat;
 
 int exe(char *content_in_f, my_stack_t **stack, unsigned int count,

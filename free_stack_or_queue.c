@@ -30,9 +30,9 @@ void add_node_in_stack(my_stack_t **h, int n_v)
 	aux_is = *h;
 	new_node_in = malloc(sizeof(my_stack_t));
 	if (new_node_in == NULL)
-	{ 
+	{
 		printf("Error\n");
-		exit(0); 
+		exit(0);
 	}
 	if (aux_is)
 	{

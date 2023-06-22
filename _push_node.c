@@ -13,17 +13,13 @@ void _push_node(my_stack_t **h, unsigned int count)
 	if (cat.arg)
 	{
 		if (cat.arg[0] == '-')
-        {
 			j++;
-        }
-        while (cat.arg[j] != '\0')
-        {
-            if (cat.arg[j] > 57 || cat.arg[j] < 48)
-            {
-                err = 1;
-            }
-            j++;
-        }
+		while (cat.arg[j] != '\0')
+		{
+			if (cat.arg[j] > 57 || cat.arg[j] < 48)
+				err = 1;
+			j++;
+		}
 		if (err == 1)
 		{
 			fprintf(stderr, "L%d: usage: push integer\n", count);
@@ -43,11 +39,7 @@ void _push_node(my_stack_t **h, unsigned int count)
 	}
 	n = atoi(cat.arg);
 	if (cat.lifi == 0)
-    {
 		add_node_in_stack(h, n);
-    }
 	else
-    {
 		add_in_queue(h, n);
-    }
 }
